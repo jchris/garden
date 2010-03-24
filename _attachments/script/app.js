@@ -1,0 +1,3 @@
+$.couch.app(function() {
+  
+});
