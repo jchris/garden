@@ -1,1 +1,13 @@
 /* add styles here */
+
+ul {
+  list-style-type: none;
+  margin:0; padding:0;
+}
+
+ul#couchapps li.app {
+  border:4px solid #55b;
+  float:left;
+  margin:8px;
+  padding:8px;
+}
