@@ -13,3 +13,5 @@ Requires CouchDB 0.11
 Screenshot:
 
 [Screenshot of a list of CouchApps with icons and links](http://github.com/jchris/garden/blob/master/_attachments/images/icon.png)
+
+Patches welcome!
