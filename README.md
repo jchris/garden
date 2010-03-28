@@ -9,3 +9,7 @@ If it doesn't run on your system, let me know -- it's pretty basic, so it should
 I'm following the #evently hashtag on twitter if people need assistance.
 
 Requires CouchDB 0.11
+
+Screenshot:
+
+[Screenshot of a list of CouchApps with icons and links](http://github.com/jchris/garden/blob/master/_attachments/images/icon.png)
