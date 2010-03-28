@@ -1,14 +1,9 @@
 $.couch.app(function() {
   var app = this;
-  var garden = app.require("lib/garden");
-  garden.localApps(function(apps) {
-    var grouped_apps = garden.groupApps(apps);
-    $.forIn(grouped_apps, function(name, apps) {
-      var li = $('<li class="app"></li>');
-      $("#couchapps").append(li);
-      $(li).evently(app.ddoc.evently.applist, app, [name, apps]);
-    });
-  });
+  $("#garden").evently(app.ddoc.evently.garden, app);
+  // make this an async event on the evently.garden
+  
+
   
   
   // give an option to copy those ddocs to the garden db for sharing
