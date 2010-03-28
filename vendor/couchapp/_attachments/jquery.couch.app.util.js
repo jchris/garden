@@ -1,6 +1,6 @@
-$.log = function() {
+$.log = function(m) {
   if (window && window.console && window.console.log) {
-    window.console.log(arguments);
+    window.console.log(arguments.length == 1 ? m : arguments);
   }
 };
 

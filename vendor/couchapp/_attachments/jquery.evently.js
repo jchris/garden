@@ -74,7 +74,7 @@ function $$(node) {
     if (app) {
       $$(elem).app = app;      
     }
-
+    $$(elem).evently = events;
     // setup the handlers onto elem
     forIn(events, function(name, h) {
       eventlyHandler(elem, name, h, args);
@@ -131,6 +131,7 @@ function $$(node) {
   };
   
   $.fn.replace = function(elem) {
+    $.log("Replace", this)
     $(this).empty().append(elem);
   };
   
@@ -156,6 +157,7 @@ function $$(node) {
       var act = h.render || "replace";
       var app = $$(me).app;
       if (h.mustache) {
+        $.log("rendering", h.mustache)
         var newElem = mustachioed(me, h, args);
         me[act](newElem);
       }
@@ -224,6 +226,7 @@ function $$(node) {
         renderElement(me, h, [resp], true);
         userSuccess && userSuccess(resp);
       };
+      $.log(app)
       app.view(viewName, q);      
     }
   }

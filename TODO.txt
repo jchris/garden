@@ -1,5 +1,9 @@
-make index info as semantic html in a list function
+share this app! (Can do without query)
+
 click more info to load details via ajax
+
+make index info as semantic html in a list function
+
 
 elsewhere:
   jchrisa.net

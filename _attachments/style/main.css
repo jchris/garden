@@ -22,6 +22,10 @@ ul#garden li.app h3 {
   margin:0;
 }
 
+.more {
+  float:right;
+}
+
 div.icon {
   float:left;
   height:100px;

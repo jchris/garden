@@ -1,7 +1,8 @@
 $.couch.app(function() {
   var app = this;
+  
   $("#garden").evently(app.ddoc.evently.garden, app);
-  // make this an async event on the evently.garden
+  $.pathbinder.begin("/");
   
 
   

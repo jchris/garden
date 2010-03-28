@@ -1,0 +1,17 @@
+<ul>
+  {{#couchapps}}
+    <li class="app">
+      <div class="icon">
+        <img src="{{icon}}"/>  
+      </div>
+      <h3>{{name}}</h3>
+      <a class="more" href="#/more/{{name}}">more info</a>
+      <ul>
+        {{#apps}}
+          <li><a target="_new" href="{{path}}">{{db}}</a></li>
+        {{/apps}}
+      </ul>
+      <div class="clear"></div>
+    </li>
+  {{/couchapps}}
+</ul>
