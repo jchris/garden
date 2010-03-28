@@ -1,5 +1,10 @@
 /* add styles here */
 
+body {
+  font:1.6em Helvetica, sans-serif;
+  padding:4px;
+}
+
 ul {
   list-style-type: none;
   margin:0; padding:0;
