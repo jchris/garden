@@ -1,0 +1,20 @@
+make index info as semantic html in a list function
+click more info to load details via ajax
+
+elsewhere:
+  jchrisa.net
+  plok.org
+  couchapp.org
+  etc
+  +1 new
+  
+  for each:
+    replicate
+      app (push / pull)
+      data (push / pull)
+  
+  
+versions:
+  drl 1-rev
+  sofa 2-rev
+  
