@@ -1,6 +1,6 @@
 function() {
   var ca = $$(this).couchapp;
-  $.log(ca);
-  ca.icon = ca.icon || "images/couchapp.png"
+  ca.icon = ca.icon || "images/couchapp.png";
+  $.log(ca);  
   return ca;
 }
