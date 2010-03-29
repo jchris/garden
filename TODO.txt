@@ -1,4 +1,7 @@
+#more float right
 share this app! (Can do without query)
+memoize initial grouped_apps query to a document
+  make a commonjs module for this
 
 click more info to load details via ajax
 
