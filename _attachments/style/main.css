@@ -10,19 +10,25 @@ ul {
   margin:0; padding:0;
 }
 
-ul#garden li.app {
+#garden {
+  width:60%;
+  float:left;
+}
+
+#garden li.app {
   border:4px solid #55b;
 /*  float:left;*/
   margin:8px;
   padding:8px;
 }
 
-ul#garden li.app h3 {
+#garden li.app h3 {
   border:0;
   margin:0;
 }
 
-.more {
+
+#info {
   float:right;
 }
 

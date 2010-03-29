@@ -1,6 +1,6 @@
 function(e, params) {
   return {
-    view : "more",
+    view : "apps",
     limit : 25,
     startkey : [params.name, {}],
     endkey : [params.name],
