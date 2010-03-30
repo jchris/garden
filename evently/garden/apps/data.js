@@ -1,11 +1,11 @@
 function() {
   $.log(arguments)
-  var grouped_apps = $$(this).grouped_apps;
-  $.log(grouped_apps)
+  var apps = $$(this).apps;
+  $.log(apps)
   var stash = {
     couchapps : []
   };
-  $.forIn(grouped_apps, function(name, apps) {
+  $.forIn(apps, function(name, apps) {
     var icon = "images/couchapp.png";
     apps.forEach(function(app) {
       if (app.icon) icon = app.icon;
