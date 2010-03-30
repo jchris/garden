@@ -55,3 +55,4 @@ $.prettyDate = function(time){
 		day_diff < 730 && Math.ceil( day_diff / 31 ) + " months ago" ||
 		Math.ceil( day_diff / 365 ) + " years ago";
 };
+
