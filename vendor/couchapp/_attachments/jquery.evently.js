@@ -147,7 +147,6 @@ function $$(node) {
       // $.log("query before renderElement", arguments)
       runQuery(me, h, args)
     } else if (h.async && !qrun) {
-      $.log("runAsync")
       runAsync(me, h, args)
     } else {
       // $.log("renderElement")
