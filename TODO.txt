@@ -1,8 +1,5 @@
-split start page from app sharing
-both are customizable and talk about db before application
-  (more than one app per db?)
-
 share this app! (Can do without query)
+  copy app to garden db
 
 make index info as semantic html in a list function
 

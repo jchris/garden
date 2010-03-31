@@ -2,6 +2,7 @@ $.couch.app(function() {
   var app = this;
   
   $("#garden").evently(app.ddoc.evently.garden, app);
+  $("#account").evently(app.ddoc.vendor.couchapp.evently.account, app);
 
   $.pathbinder.begin("/");
   
