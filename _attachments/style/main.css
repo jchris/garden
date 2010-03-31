@@ -5,6 +5,11 @@ body {
   padding:4px;
 }
 
+h1 {
+  margin:0;
+  padding:0;
+}
+
 ul {
   list-style-type: none;
   margin:0; padding:0;
@@ -26,18 +31,6 @@ ul {
   margin:0;
 }
 
-a.info {
-  float:right;
-  font-size:0.8em;
-}
-
-#info {
-  border:4px solid #55b;
-  margin:8px;
-  padding:8px;
-  float:right;
-}
-
 div.icon {
   float:left;
   height:100px;
@@ -47,6 +40,30 @@ div.icon {
 .icon img {
   width:100px;
 }
+
+a.info {
+  float:right;
+  font-size:0.5em;
+}
+
+#info {
+  width:50%;
+  border:4px solid #55b;
+  margin:8px;
+  padding:8px;
+  float:left;
+}
+
+div.screen {
+  float:left;
+  height:300px;
+  margin-right:8px;
+}
+
+div.screen img {
+  width:300px;
+}
+
 
 .clear {
   clear:left;

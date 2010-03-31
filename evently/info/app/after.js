@@ -1,3 +1,3 @@
 function() {
-  $.scrollTo(this, 200);
+  $.scrollTo("body", 200);
 };

@@ -1,11 +1,11 @@
 <ul>
   {{#couchapps}}
     <li class="app">
+      <a class="info" href="#/app/{{name}}">more info</a>
       <div class="icon">
         <img src="{{icon}}"/>  
       </div>
       <h3>{{name}}</h3>
-      <a class="info" href="#/app/{{name}}">more info</a>
       <ul>
         {{#installs}}
           <li><a target="_new" href="{{path}}">{{db}}</a></li>
