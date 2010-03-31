@@ -1,10 +1,11 @@
 function() {
   var apps = $$(this).apps;
+  $.log(apps)
   var stash = {
-    couchapps : []
+    couchapps : $$(this).apps.map(function(a) {
+      a.icon = a.icon || "images/couchapp.png";
+      return a;
+    })
   };
-  $.forIn(apps, function(name, info) {
-    stash.couchapps.push(info);
-  });
   return stash;
 }

@@ -1,16 +1,11 @@
 <ul>
   {{#couchapps}}
     <li class="app">
-      <a class="info" href="#/app/{{name}}">more info</a>
+      <h3>{{db}}</h3>
+      <h4>{{name}}</h4>
       <div class="icon">
-        <img src="{{icon}}"/>  
+        <a target="_new" href="{{path}}"><img src="{{icon}}" alt="{{name}} on {{db}}"/></a>
       </div>
-      <h3>{{name}}</h3>
-      <ul>
-        {{#installs}}
-          <li><a target="_new" href="{{path}}">{{db}}</a></li>
-        {{/installs}}
-      </ul>
       <div class="clear"></div>
     </li>
   {{/couchapps}}

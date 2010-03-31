@@ -15,30 +15,41 @@ ul {
   margin:0; padding:0;
 }
 
-#garden {
-  width:40%;
-  float:left;
-}
-
-#garden li.app {
-  border:4px solid #55b;
-  margin:8px;
-  padding:8px;
-}
-
-#garden li.app h3 {
-  border:0;
+#garden h4 {
+  padding:0;
   margin:0;
 }
 
-div.icon {
+#garden li.app {
   float:left;
-  height:100px;
-  margin-right:8px;
+  width:200px;
+  height:200px;
+  border:4px solid #55b;
+  background:#eef;
+  margin:8px;
+  padding:8px;
+  text-align:center;
+}
+
+#garden li.app h3 {
+  padding:0;
+  margin:0;
+  font-size:1em;
+}
+
+#garden li.app h4 {
+  font-size:0.7em;
+  color:#555;
+}
+
+div.icon {
+  margin-top:8px;
+  max-height:150px;
+  overflow:hidden;
 }
 
 .icon img {
-  width:100px;
+  width:150px;
 }
 
 a.info {
