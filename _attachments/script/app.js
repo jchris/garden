@@ -3,6 +3,7 @@ $.couch.app(function() {
   
   $("#garden").evently(app.ddoc.evently.garden, app);
 
+  $.pathbinder.begin("/");
   
 
   
