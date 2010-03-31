@@ -191,8 +191,8 @@ function $$(node) {
     var app = $$(me).app;
     // the callback is the first argument
     funViaString(h.async).apply(me, [function() {
-      renderElement(me, h, $.toArray(args).concat($.toArray(arguments)), true);
-    }].concat(args));
+      renderElement(me, h, $.argsToArray(arguments).concat($.argsToArray(args)), true);
+    }].concat($.argsToArray(args)));
   };
   
   
@@ -214,7 +214,7 @@ function $$(node) {
       q.success = function(resp) {
         $.log("runQuery newRows success", resp.rows.length, me, resp)
         resp.rows.reverse().forEach(function(row) {
-          renderElement(me, h, [row].concat($.toArray(args)), true)
+          renderElement(me, h, [row].concat($.argsToArray(args)), true)
         });
         if (userSuccess) userSuccess(resp);
       };
@@ -222,7 +222,7 @@ function $$(node) {
     } else {
       q.success = function(resp) {
         // $.log("runQuery success", resp)
-        renderElement(me, h, [resp].concat($.toArray(args)), true);
+        renderElement(me, h, [resp].concat($.argsToArray(args)), true);
         userSuccess && userSuccess(resp);
       };
       $.log(app)

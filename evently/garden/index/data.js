@@ -1,5 +1,6 @@
-function() {
-  var apps = $$(this).apps;
+function(apps) {
+  $.log(arguments)
+  // var apps = $$(this).apps;
   var stash = {
     couchapps : apps
   };
