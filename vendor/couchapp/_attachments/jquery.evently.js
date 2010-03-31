@@ -105,7 +105,7 @@ function $$(node) {
     }
     var f = funViaString(h);
     if (typeof f == "function") {
-      elem.bind(name,  {args:args}, f); 
+      elem.bind(name, {args:args}, f); 
     } else if (typeof f == "string") {
       elem.bind(name, {args:args}, function() {
         $(this).trigger(f, arguments);
@@ -187,11 +187,11 @@ function $$(node) {
       runIfFun(me, h.partials, args)));
   };
   
-  function runAsync(me, h, args) {
+  function runAsync(me, h, args) {  
     var app = $$(me).app;
     // the callback is the first argument
     funViaString(h.async).apply(me, [function() {
-      renderElement(me, h, arguments, true);
+      renderElement(me, h, $.toArray(args).concat($.toArray(arguments)), true);
     }].concat(args));
   };
   
@@ -214,7 +214,7 @@ function $$(node) {
       q.success = function(resp) {
         $.log("runQuery newRows success", resp.rows.length, me, resp)
         resp.rows.reverse().forEach(function(row) {
-          renderElement(me, h, [row], true)
+          renderElement(me, h, [row].concat($.toArray(args)), true)
         });
         if (userSuccess) userSuccess(resp);
       };
@@ -222,7 +222,7 @@ function $$(node) {
     } else {
       q.success = function(resp) {
         // $.log("runQuery success", resp)
-        renderElement(me, h, [resp], true);
+        renderElement(me, h, [resp].concat($.toArray(args)), true);
         userSuccess && userSuccess(resp);
       };
       $.log(app)
