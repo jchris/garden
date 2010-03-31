@@ -1,9 +1,8 @@
-#more float right
-share this app! (Can do without query)
-memoize initial apps query to a document
-  make a commonjs module for this
+split start page from app sharing
+both are customizable and talk about db before application
+  (more than one app per db?)
 
-click more info to load details via ajax
+share this app! (Can do without query)
 
 make index info as semantic html in a list function
 
