@@ -1,10 +1,11 @@
 function(cb, e, params) {
-  var db_id = params.splat[0];
+  var app_db_id = params.splat[0];
   var app = $$(this).app;
   var garden = app.require("lib/garden");
-  $.log(db_id)
+  $.log(app_db_id)
   app.view("apps", {
-    startkey : "x",
+    startkey : [app_db_id],
+    endkey : [app_db_id,{}],
     success : function(resp) {
       resp.rows.forEach(function(row) {
         
@@ -13,7 +14,7 @@ function(cb, e, params) {
       garden.cachedApps(app, function(apps) {
         $.log(arguments)
         for (var i=0; i < apps.length; i++) {
-          if (apps[i].db_id == db_id) {
+          if (apps[i].app_db_id == app_db_id) {
             app = apps[i];
             break;
           }

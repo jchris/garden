@@ -3,6 +3,9 @@ share this app! (Can do without query)
 
 make index info as semantic html in a list function
 
+evently shared templates
+
+replication manager / db
 
 elsewhere:
   jchrisa.net

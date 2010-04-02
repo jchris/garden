@@ -1,10 +1,11 @@
 $.couch.app(function() {
   var app = this;
   
-  $("#garden").evently(app.ddoc.evently.garden, app);
+  // $("#garden").evently(app.ddoc.evently.garden, app);
+  // $("#replicate").evently(app.ddoc.evently.replicate, app);
   $("#account").evently(app.ddoc.vendor.couchapp.evently.account, app);
 
-  $.pathbinder.begin("/");
+  // $.pathbinder.begin("/");
   
 
   

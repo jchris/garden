@@ -2,7 +2,12 @@
   {{#couchapps}}
     <li class="app">
       <h3>{{db}}</h3>
-      <a class="info" href="#/info/{{db_id}}">info</a>
+      <div class="info">
+        info: 
+        <a href="db.html#/db/{{db}}">db</a>
+        <a href="app.html#/app/{{db}}">app</a>
+      </div>
+      
       <h4>{{name}}</h4>
       <div class="icon">
         <a target="_new" href="{{path}}"><img src="{{icon}}" alt="{{name}} on {{db}}"/></a>

@@ -1,7 +1,7 @@
 /* add styles here */
 
 body {
-  font:1.6em Helvetica, sans-serif;
+  font:1em Helvetica, sans-serif;
   padding:4px;
 }
 
@@ -13,6 +13,10 @@ h1 {
 ul {
   list-style-type: none;
   margin:0; padding:0;
+}
+
+#account {
+  float:right;
 }
 
 #garden h4 {
@@ -39,7 +43,7 @@ ul {
 }
 
 #garden li.app h4 {
-  font-size:0.7em;
+  font-size:0.8em;
   color:#555;
   text-align:left;
 }
@@ -54,17 +58,17 @@ div.icon {
   width:150px;
 }
 
-a.info {
+.info {
   float:right;
-  font-size:0.5em;
+  font-size:0.75em;
 }
 
-.info {
+/*.info {
   border:4px solid #55b;
   background:#eef;
   margin:8px;
   padding:8px;
-}
+}*/
 
 div.screen {
   float:left;
