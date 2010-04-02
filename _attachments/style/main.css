@@ -72,14 +72,8 @@ div.icon {
 
 div.screen {
   float:left;
-  height:300px;
   margin-right:8px;
 }
-
-div.screen img {
-  width:300px;
-}
-
 
 .clear {
   clear:left;

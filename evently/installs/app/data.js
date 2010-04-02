@@ -1,23 +1,5 @@
-function(apps) {
-  $.log("apps")
-  $.log(apps);
-
-
-
-
-  
+function(apps) {  
   return {
-    installs : apps.map(function(a) {
-      return {
-        name : a.name,
-        user : "jchris",
-        path : a.path,
-        db : a.db,
-        share : true,
-        update : false
-      }
-    })
+    installs : apps
   };
 };
-
-// create a stash of list items that have the proper values for share and update
