@@ -1,4 +1,5 @@
 share this app! (Can do without query)
+  shared_by should be profile
   copy app to garden db
 install this app
   pick a db
@@ -28,3 +29,59 @@ versions:
   drl 1-rev
   sofa 2-rev
   
+
+
+ Sofa, running in:
+
+   [Daytime Running Lights](db.html#/db/drl)
+     [jchris/sofa](source username when self rev match -- unedited)
+   [Old Drl](db.html#/db/drl-old)
+     [jchris/sofa]() update (when unedited but not same as same-users-shared)
+   [Couchio Talk](db.html#/db/talk)
+     [couchio/sofa]()
+   [Sofa](db.html#/db/sofa)
+     [sofa]() share (if rev no match)
+
+     function db_link_username() {
+       unedited
+         username
+       edited
+         if (usename == me)
+           me
+         else
+           remove username
+         end
+     }
+
+     update() {
+       unedited && shared[username].rev != my rev
+     }
+     
+     edited() {
+       install_rev != ddoc_rev
+       // store in install record
+       (could we use rev prefix?)
+     }
+     
+     share() {
+       edited || !doc.garden
+     }
+
+ Shared Versions:
+
+ [couchio/sofa](shared/couchio/_design/sofa) 
+   Install
+ [jchris/sofa](shared/jchris/_design/sofa) 
+   Install
+     on click
+       to which db?
+         drl
+         drl-old
+         sofa
+         + other / new
+
+
+ [oreillymedia/sofa](shared/oreillymedia/_design/sofa)
+   Install
+ [benoit/sofa](shared/benoit/_design/sofa)
+   Install

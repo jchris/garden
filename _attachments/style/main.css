@@ -1,5 +1,9 @@
 /* add styles here */
 
+pre {
+  background:#eee;
+}
+
 body {
   font:1em Helvetica, sans-serif;
   padding:4px;

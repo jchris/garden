@@ -6,71 +6,17 @@
   </head>
   <body>
     <div id="account"></div>
-    <h1>Loading <span class="app">App</span> Info...</h1>
+    <h1><span class="app">Loading App</span> Info...</h1>
 
     <h2><span class="app">App</span>, running in:</h2>
     <ul id="installs">
-
     </ul>
 
-    <h2>Prototype</h2>
-    <pre>
-      
-      Sofa, running in:
-
-        [Daytime Running Lights](db.html#/db/drl)
-          [jchris/sofa](source username when self rev match -- unedited)
-        [Old Drl](db.html#/db/drl-old)
-          [jchris/sofa]() update (when unedited but not same as same-users-shared)
-        [Couchio Talk](db.html#/db/talk)
-          [couchio/sofa]()
-        [Sofa](db.html#/db/sofa)
-          [sofa]() share (if rev no match)
-
-          function db_link_username() {
-            unedited
-              username
-            edited
-              if (usename == me)
-                me
-              else
-                remove username
-              end
-          }
-
-          update() {
-            unedited && shared[username].rev != my rev
-          }
-          
-          edited() {
-            install_rev != ddoc_rev
-            // store in install record
-            (could we use rev prefix?)
-          }
-          
-          share() {
-            edited || !doc.garden
-          }
-
-      Shared Versions:
-
-      [couchio/sofa](shared/couchio/_design/sofa) 
-        Install
-      [jchris/sofa](shared/jchris/_design/sofa) 
-        Install
-          on click
-            to which db?
-              drl
-              drl-old
-              sofa
-              + other / new
+    <h2>Versions of <span class="app">App</span> in the Garden:</h2>
+    <ul id="shares">
+    </ul>
 
 
-      [oreillymedia/sofa](shared/oreillymedia/_design/sofa)
-        Install
-      [benoit/sofa](shared/benoit/_design/sofa)
-        Install
-    </pre>
   </body>
   <script src="/_utils/script/json2.js"></script>
   <script src="/_utils/script/jquery.js"></script>
@@ -86,6 +32,7 @@
   <script type="text/javascript" charset="utf-8">
     $.couch.app(function(app) {
       $("#installs").evently(app.ddoc.evently.installs, app);
+      $("#shares").evently(app.ddoc.evently.shares, app);
       $.pathbinder.begin("/");
     });
   </script>

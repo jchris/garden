@@ -1,5 +1,4 @@
 function(cb, e, params) {
-  $.log("aysn")
   var name = params.name;
   // load all ddocs with the matching name in any database
     // use the memoized thing + filter (for 1 cache)
