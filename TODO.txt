@@ -1,5 +1,9 @@
 share this app! (Can do without query)
   copy app to garden db
+install this app
+  pick a db
+  copy to ddoc
+  record install rev for noticing edits
 
 make index info as semantic html in a list function
 

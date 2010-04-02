@@ -41,7 +41,13 @@
           update() {
             unedited && shared[username].rev != my rev
           }
-
+          
+          edited() {
+            install_rev != ddoc_rev
+            // store in install record
+            (could we use rev prefix?)
+          }
+          
           share() {
             edited || !doc.garden
           }
