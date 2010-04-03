@@ -4,17 +4,17 @@
   </div>
   <h3>{{name}}</h3>
   <h4>shared by: {{#shared_by}}{{shared_by}}{{/shared_by}}</h4>
-  
-  <label for="install">Install</label>
-  <select name="install">
-    {{#dbs}}
-      <option value="{{name}}">{{name}}</option>
-    {{/dbs}}
-    <option value="_other">+ other</option>
-    
-  </select>
-  
-
+  <form class="install">
+    <label for="install">Install</label>
+    <select name="install">
+      {{#dbs}}
+        <option value="{{name}}">{{name}}</option>
+      {{/dbs}}
+      <option value="_other">+ other</option>
+    </select>
+    <input type="hidden" name="shared_doc_id" value="{{shared_doc_id}}">
+    <input type="submit" value="Install">
+  </form>
   <div class="clear"></div>
 </li>
 
