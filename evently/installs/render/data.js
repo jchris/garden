@@ -1,6 +1,4 @@
-function(e, installs) {  
-  $.log("installs");
-    $.log(arguments)
+function(e, name, installs) {
   return {
     installs : installs
   };

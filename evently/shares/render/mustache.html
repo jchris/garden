@@ -7,11 +7,18 @@
   <form class="install">
     <label for="install">Install</label>
     <select name="install">
-      {{#dbs}}
-        <option value="{{name}}">{{name}}</option>
-      {{/dbs}}
+      {{#installs}}
+        <option value="{{db}}">{{db}}</option>
+      {{/installs}}
       <option value="_other">+ other</option>
     </select>
+    <div class="other">
+      <label for="other">Other: </label>
+      <input type="text" name="other">
+      <label for="create">Create:</label>
+      <input type="checkbox" name="create" value="">
+      
+    </div>
     <input type="hidden" name="shared_doc_id" value="{{shared_doc_id}}">
     <input type="submit" value="Install">
   </form>

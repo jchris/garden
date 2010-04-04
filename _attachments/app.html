@@ -33,6 +33,7 @@
     $.couch.app(function(app) {
       $("#installs").evently(app.ddoc.evently.installs, app);
       $("#shares").evently(app.ddoc.evently.shares, app);
+      $.evently.connect($("#installs"), $("#shares"), ["render"]);
       $.pathbinder.begin("/");
     });
   </script>

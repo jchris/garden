@@ -7,6 +7,6 @@ function(e, params) {
   var app =  $$(this).app;
   var garden = app.require("lib/garden");
   garden.installedApps(app, name, function(installs) {
-    $(widget).trigger("render", [installs]);
+    $(widget).trigger("render", [name, installs]);
   });
 };
