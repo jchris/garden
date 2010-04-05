@@ -7,6 +7,7 @@ pre {
 body {
   font:1em Helvetica, sans-serif;
   padding:4px;
+  background:url(../images/tile.png);
 }
 
 h1 {
