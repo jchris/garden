@@ -6,9 +6,9 @@
   </head>
   <body>
     <div id="account"></div>
-    <h1><a href="/">CouchApp Garden</a></h1>
-    <p>Easy access to all your CouchApps. <a href="apps.html">Browse available apps.</a></p>
-    <div id="garden"></div>
+    <h1><a href="index.html">CouchApp Garden</a></h1>
+    <p>Easy access to all your CouchApps.</p>
+    <div id="apps"></div>
   </body>
   <script src="/_utils/script/json2.js"></script>
   <script src="/_utils/script/jquery.js"></script>
@@ -23,9 +23,10 @@
   <script src="script/app.js"></script>
   <script>
     $.couch.app(function(app) {
-      $("#garden").evently(app.ddoc.evently.garden, app);
+      $("#apps").evently(app.ddoc.evently.apps, app);
       $.pathbinder.begin("/");
     });
   </script>
+
 </html>
 
