@@ -1,3 +1,4 @@
 {
-  "view" : "apps"
+  "view" : "apps",
+  "type" : "newRows"
 }
