@@ -1,8 +1,8 @@
 <li>
   <div class="icon screen">
-    <a target="_new" href="{{path}}"><img src="{{icon}}" alt="{{name}} on {{db}}"/></a>
+    <img src="{{icon}}" alt="{{name}} on {{db}}"/>
   </div>
-  <h4>shared by: {{#shared_by}}{{shared_by}}{{/shared_by}}</h4>
+  <h3>shared by: {{#shared_by}}{{shared_by}}{{/shared_by}}</h3>
   <form class="install">
     <label for="install">Install</label>
     <select name="install">
@@ -16,7 +16,6 @@
       <input type="text" name="other">
       <label for="create">Create:</label>
       <input type="checkbox" name="create" value="">
-      
     </div>
     <input type="hidden" name="shared_doc_id" value="{{shared_doc_id}}">
     <input type="submit" value="Install">
