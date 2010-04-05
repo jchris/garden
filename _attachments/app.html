@@ -6,15 +6,20 @@
   </head>
   <body>
     <div id="account"></div>
-    <h1>CouchApp Garden</h1>
-    <p><a href="index.html">Back to the Garden</a></p>
-    <h2><span class="app">App</span>, running in these databases:</h2>
-    <ul id="installs">
-    </ul>
-
-    <h2>Versions of <span class="app">App</span> in the Garden:</h2>
-    <ul id="shares">
-    </ul>
+    <h1>CouchApp Garden -- App Info <span class="app"></span></h1>
+    <p><a href="index.html">Back to my apps</a></p>
+    
+    <div id="shares">
+      <h3>Shared versions of <span class="app">App</span>:</h3>
+      <ul>
+      </ul>      
+    </div>
+    
+    <div id="installs">
+      <h3><span class="app">App</span> is installed in these databases:</h3>
+      <ul>
+      </ul>
+    </div>
 
 
   </body>
@@ -31,9 +36,9 @@
   <script src="script/app.js"></script>
   <script type="text/javascript" charset="utf-8">
     $.couch.app(function(app) {
-      $("#installs").evently(app.ddoc.evently.installs, app);
-      $("#shares").evently(app.ddoc.evently.shares, app);
-      $.evently.connect($("#installs"), $("#shares"), ["render"]);
+      $("#installs ul").evently(app.ddoc.evently.installs, app);
+      $("#shares ul").evently(app.ddoc.evently.shares, app);
+      $.evently.connect($("#installs ul"), $("#shares ul"), ["render"]);
       $.pathbinder.begin("/");
     });
   </script>
