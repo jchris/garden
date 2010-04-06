@@ -29,15 +29,23 @@ ul {
   margin:0 0 8px 0;
 }
 
-#garden li.app {
+li {
+  margin:8px;
+  padding:8px;
+  border:4px dotted #bbc;
+}
+
+#shares .icon img {
+  border:2px solid #bbc;
+}
+
+li.app {
   float:left;
   width:200px;
   height:200px;
   border:4px solid #55b;
   background:#eef;
   overflow:hidden;
-  margin:8px;
-  padding:8px;
   text-align:center;
 }
 

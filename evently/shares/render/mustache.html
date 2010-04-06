@@ -3,8 +3,9 @@
     <img src="{{icon}}" alt="{{name}} on {{db}}"/>
   </div>
   <h3>shared by: {{#shared_by}}{{shared_by}}{{/shared_by}}</h3>
+  <p>from db: {{#from_db}}{{from_db}}{{/from_db}}</p>
   <form class="install">
-    <label for="install">Install</label>
+    <label for="install">Install:</label>
     <select name="install">
       {{#installs}}
         <option value="{{db}}">{{db}}</option>

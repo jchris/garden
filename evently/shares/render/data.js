@@ -4,5 +4,6 @@ function(row, e, name, installs) {
   info.icon = info.icon || "images/couchapp.png";
   info.installs = installs;
   info.shared_doc_id = row.id;
+  info.from_db = info.db;
   return info;
 };
